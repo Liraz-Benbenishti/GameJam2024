@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isGrounded || isDoubleJumpPossible)
             {
-                rb.velocity.y = 0f;
+                rb.velocity = new Vector2(rb.velocity.x, 0f);
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 //isGrounded = false;
                 isDoubleJumpPossible = !isDoubleJumpPossible;
