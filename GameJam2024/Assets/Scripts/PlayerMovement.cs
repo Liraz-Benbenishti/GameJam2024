@@ -7,10 +7,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public float velocity = 5f;
     public float jumpForce = 10f;
-    private bool isGrounded = true;
+    public bool isGrounded = true;
     public Transform groundChecker;
     public float groundCheckerDistance = 0.1f;
     public LayerMask groundLayer;
+    public bool isDoubleJumpPossible = false;
 
     private void Awake()
     {
@@ -39,10 +40,20 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (isGrounded)
+            if (isGrounded || isDoubleJumpPossible)
             {
+                rb.velocity.y = 0f;
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                isGrounded = false;
+                //isGrounded = false;
+                isDoubleJumpPossible = !isDoubleJumpPossible;
+                //if (isDoubleJumpPossible)
+                //{
+                //    isDoubleJumpPossible = false;
+                //}
+                //else
+                //{
+                //    isDoubleJumpPossible = true;
+                //}
             }
         }
 
@@ -52,5 +63,12 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         isGrounded = Physics2D.Raycast(groundChecker.position, Vector2.down, groundCheckerDistance, groundLayer);
+    }
+
+    // Draw Gizmo to visualize the ground check
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(groundChecker.position, groundChecker.position + Vector3.down * groundCheckerDistance);
     }
 }
