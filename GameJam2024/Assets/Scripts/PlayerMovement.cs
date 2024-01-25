@@ -7,6 +7,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public float velocity = 5f;
     public float jumpForce = 10f;
+    private bool isGrounded = true;
+    public Transform groundChecker;
+    public float groundCheckerDistance = 0.1f;
+    public LayerMask groundLayer;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -34,7 +39,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            if (isGrounded)
+            {
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                isGrounded = false;
+            }
         }
+
+
+    }
+
+    private void FixedUpdate()
+    {
+        isGrounded = Physics2D.Raycast(groundChecker.position, Vector2.down, groundCheckerDistance, groundLayer);
     }
 }
