@@ -6,9 +6,11 @@ public class GameManager : MonoBehaviour
 {
     public float gameTimeInSeconds = 10f; // Adjust this to set the total game time in seconds.
     private float currentTime;
-    public bool isGameOver = false;
     public TMP_Text countdownText; // Reference to a UI Text component to display the countdown.
     public VoidEventChannel gameOverEvent;
+    public GameSceneSO menuScene;
+    public LoadEventChannelSO loadSceneEvent;
+    
     void Start()
     {
         currentTime = gameTimeInSeconds;
@@ -37,8 +39,12 @@ public class GameManager : MonoBehaviour
         // Update the UI Text to display the current time.
         if (countdownText != null)
         {
-            
             countdownText.text = "Time: " + Mathf.CeilToInt(currentTime);
         }
+    }
+
+    public void LoadMenuScene()
+    {
+        loadSceneEvent.RaiseEvent(menuScene, true);
     }
 }
