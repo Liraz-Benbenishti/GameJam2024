@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e20f0dd607da942a2d9cf54ae3b93c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 5
+  velocity: 0.5
   jumpForce: 5
   isGrounded: 1
   groundChecker: {fileID: 5196217859276475249}
@@ -77,7 +77,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3d3f569a50dbd450d9674eb96b430e2f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
