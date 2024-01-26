@@ -1,22 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private int health;
-    public int maxHealth = 5;
     private Rigidbody2D rb;
     public float velocity = 5f;
     public float jumpForce = 10f;
     public bool isGrounded = true;
+
     public Transform groundChecker;
     public float groundCheckerDistance = 0.1f;
     public LayerMask groundLayer;
     public bool isDoubleJumpPossible = false;
     public VoidEventChannel gameOverEvent;
     public VoidEventChannel winEvent;
-
+    public int maxHealth = 3;
+    public int currentHealth;
+    public event UnityAction onObsticle;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -26,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = maxHealth;
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -69,9 +71,10 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "obstacle")
         {
             Debug.Log("hurting playyer");
-            health--;
+            currentHealth--;
+            onObsticle?.Invoke();
 
-            if (health == 0)
+            if (currentHealth == 0)
             {
                 gameOverEvent.raiseEvent();
             }
@@ -84,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    private void FixedUpdate()
+            private void FixedUpdate()
     {
         isGrounded = Physics2D.Raycast(groundChecker.position, Vector2.down, groundCheckerDistance, groundLayer);
     }

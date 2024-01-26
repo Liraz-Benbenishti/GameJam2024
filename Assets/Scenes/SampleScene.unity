@@ -898,7 +898,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e20f0dd607da942a2d9cf54ae3b93c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
   velocity: 5
   jumpForce: 5
   isGrounded: 1
@@ -910,6 +909,7 @@ MonoBehaviour:
   isDoubleJumpPossible: 0
   gameOverEvent: {fileID: 11400000, guid: 57bdb5b2db76645608eb86f45227a90f, type: 2}
   winEvent: {fileID: 11400000, guid: 417200180ea5a431f9cf146b43ce58a8, type: 2}
+  health: {fileID: 11400000, guid: aac0b63d2ce393848861c54bc28512c8, type: 2}
 --- !u!4 &577150450
 Transform:
   m_ObjectHideFlags: 0
@@ -1428,6 +1428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269062016}
   - component: {fileID: 1269062015}
+  - component: {fileID: 1269062017}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1496,12 +1497,25 @@ Transform:
   m_GameObject: {fileID: 1269062014}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2393, y: -0.0218, z: 0}
-  m_LocalScale: {x: 13.236037, y: 4.0760365, z: 1}
+  m_LocalPosition: {x: 62.45, y: 0.18, z: 0}
+  m_LocalScale: {x: 100, y: 4.0760365, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269062017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269062014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369ebff9134f0be469b8546963050857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
 --- !u!1 &1438442570
 GameObject:
   m_ObjectHideFlags: 0
@@ -7165,10 +7179,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f48f57fa8507543a225c9bf681a501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 577150449}
   gameOverEvent: {fileID: 11400000, guid: 57bdb5b2db76645608eb86f45227a90f, type: 2}
   gameOverPanel: {fileID: 1438442570}
   winEvent: {fileID: 11400000, guid: 417200180ea5a431f9cf146b43ce58a8, type: 2}
   WinPanel: {fileID: 1624486598}
+  hearts:
+  - {fileID: 1160842095}
+  - {fileID: 619613153}
+  - {fileID: 1995900512}
+  shareHeart: {fileID: 11400000, guid: aac0b63d2ce393848861c54bc28512c8, type: 2}
 --- !u!1 &1995900512
 GameObject:
   m_ObjectHideFlags: 0
