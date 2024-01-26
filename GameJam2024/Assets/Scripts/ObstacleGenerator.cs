@@ -1,31 +1,39 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class ObstacleGenerator : MonoBehaviour
 {
     public GameObject[] obstaclePrefabs;
-    public float spawnInterval = 2f;
-    public float spawnRange = 2f;
-    
-    private float elapsedTime;
+    public int minObstacleCount = 10;
+    public int maxObstacleCount = 30;
+    public float startingObstaclePosition = 100;
+    public float minObstacleDistance = 10;
+    public float maxObstacleDistance = 15;
 
-    private void Update()
+    private Transform environment_transform;
+
+    private void Awake()
     {
-        elapsedTime += Time.deltaTime;
+        environment_transform = transform.parent;
+    }
 
-        if (elapsedTime > spawnInterval)
-        {
-            SpawnObstacle();
+    private void Start()
+    {
+        var obstacleCount = Random.Range(minObstacleCount, maxObstacleCount);
 
-            elapsedTime = 0f;
+        float xPosition = startingObstaclePosition;
+        
+        for (int i = 0; i < obstacleCount; i++) {
+            SpawnObstacle(xPosition);
+            xPosition +=  Random.Range(minObstacleDistance, maxObstacleDistance);
         }
     }
 
-    void SpawnObstacle()
+    void SpawnObstacle(float xPosition)
     {
-        float randomY = Random.Range(-spawnRange, spawnRange);
         int randomIndex = Random.Range(0, obstaclePrefabs.Length);
-        Instantiate(obstaclePrefabs[randomIndex], new Vector2(transform.position.x, randomY), Quaternion.identity);
+        Instantiate(obstaclePrefabs[randomIndex], new Vector2(xPosition, 0), Quaternion.identity, environment_transform);
     }
 }

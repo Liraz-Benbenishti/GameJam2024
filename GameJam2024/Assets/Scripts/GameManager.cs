@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     private float currentTime;
     public bool isGameOver = false;
     public TMP_Text countdownText; // Reference to a UI Text component to display the countdown.
-
+    public VoidEventChannel gameOverEvent;
     void Start()
     {
         currentTime = gameTimeInSeconds;
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         if (currentTime > 0f)
         {
             currentTime -= Time.deltaTime; // Countdown time.
-            Debug.Log("1");
+            
             // Update the UI Text to display the countdown.
             UpdateCountdownText();
         }
@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
         {
             // Game over or handle the end of the game logic here.
             Debug.Log("Game Over!");
+            gameOverEvent.raiseEvent();
         }
     }
 
@@ -36,7 +37,7 @@ public class GameManager : MonoBehaviour
         // Update the UI Text to display the current time.
         if (countdownText != null)
         {
-            Debug.Log(currentTime);
+            
             countdownText.text = "Time: " + Mathf.CeilToInt(currentTime);
         }
     }

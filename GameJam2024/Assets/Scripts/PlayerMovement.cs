@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private int health;
+    public int maxHealth = 5;
     private Rigidbody2D rb;
     public float velocity = 5f;
     public float jumpForce = 10f;
@@ -12,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckerDistance = 0.1f;
     public LayerMask groundLayer;
     public bool isDoubleJumpPossible = false;
+    public VoidEventChannel gameOverEvent;
+    public VoidEventChannel winEvent;
 
     private void Awake()
     {
@@ -22,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -59,6 +63,26 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "obstacle")
+        {
+            Debug.Log("hurting playyer");
+            health--;
+
+            if (health == 0)
+            {
+                gameOverEvent.raiseEvent();
+            }
+        }
+
+        else if (collision.gameObject.tag == "Finish")
+        {
+            winEvent.raiseEvent();
+        }
+    }
+
 
     private void FixedUpdate()
     {
