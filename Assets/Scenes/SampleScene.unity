@@ -154,6 +154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 1459166199789352272, guid: e37d9e0db5f854bf5a15e6df7929afbc, type: 3}
+  - {fileID: 1459166199789352272, guid: 4f0a8137ffb9a42489f13fab6d6ed590, type: 3}
+  - {fileID: 1459166199789352272, guid: 28bb936ed1658eb4f94914a891146126, type: 3}
+  - {fileID: 1459166199789352272, guid: f2181b1e405410e4ab18be680dbd7ded, type: 3}
   minObstacleCount: 10
   maxObstacleCount: 30
   startingObstaclePosition: 15
