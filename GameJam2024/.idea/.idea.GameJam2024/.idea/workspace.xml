@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a9c8202-4cdf-41f6-879b-53bfe5d3bbf1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Assets/Prefabs/Motor_mt1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Prefabs/Motor_mt1_D.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Fonts/LiberationSans - OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets/Default Sprite Asset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets/DropCap Numbers.asset.meta" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="UI/Yonatan" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1706273726" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="Art/Omer" />
+                    <option name="lastUsedInstant" value="1706273068" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="UI/Yonatan" />
+                    <option name="lastUsedInstant" value="1706272574" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/.." />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/Assets/Scenes/Menu.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Materials/Road.001.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Materials/Road.001.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Materials/Road.001.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/Init.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/PersistentManagers.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/PersistentManagers.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/ScriptableObjects/Events/GameOverEvent.asset.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scripts/Audio/AudioManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scripts/SceneManagement/InitializationLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/amitaimazliah/Projects/GameJam2024/GameJam2024/Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectId" id="2bSerfdX7S26btJH3AD3eSvZjRf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/amitaimazliah/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/Users/amitaimazliah/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/Users/amitaimazliah/.local/share/Symbols/src"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.15f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.15f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a9c8202-4cdf-41f6-879b-53bfe5d3bbf1" name="Changes" comment="" />
+      <created>1706213112514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706213112514</updated>
+      <workItem from="1706213121377" duration="12908000" />
+    </task>
+    <task id="LOCAL-00001" summary="ObstacleGenerator">
+      <created>1706214125249</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706214125250</updated>
+    </task>
+    <task id="LOCAL-00002" summary="obstacle">
+      <created>1706214590514</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706214590514</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added timer UI">
+      <created>1706215123064</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706215123065</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added factory">
+      <created>1706264294008</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706264294009</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added pool">
+      <created>1706264490181</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706264490181</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Sounnd emitter">
+      <created>1706265111558</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706265111558</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix evenets">
+      <created>1706265662659</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706265662659</updated>
+    </task>
+    <task id="LOCAL-00008" summary=".">
+      <created>1706265763995</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706265763995</updated>
+    </task>
+    <task id="LOCAL-00009" summary="audio manager">
+      <created>1706266245732</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706266245733</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gitignore">
+      <created>1706266355222</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706266355222</updated>
+    </task>
+    <task id="LOCAL-00011" summary="init">
+      <created>1706266889017</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706266889017</updated>
+    </task>
+    <task id="LOCAL-00012" summary="scene manager">
+      <created>1706267228225</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706267228230</updated>
+    </task>
+    <task id="LOCAL-00013" summary="audio config">
+      <created>1706268466804</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706268466804</updated>
+    </task>
+    <task id="LOCAL-00014" summary="mixer props">
+      <created>1706269078839</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1706269078839</updated>
+    </task>
+    <task id="LOCAL-00015" summary="menu">
+      <created>1706270189510</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1706270189510</updated>
+    </task>
+    <task id="LOCAL-00016" summary="menu music">
+      <created>1706270607874</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1706270607874</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fix conflicts">
+      <created>1706272783065</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1706272783065</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix conflicts">
+      <created>1706273129830</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1706273129830</updated>
+    </task>
+    <task id="LOCAL-00019" summary="menu scene">
+      <created>1706273756829</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1706273756829</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="ObstacleGenerator" />
+    <MESSAGE value="obstacle" />
+    <MESSAGE value="Added timer UI" />
+    <MESSAGE value="Added factory" />
+    <MESSAGE value="Added pool" />
+    <MESSAGE value="Start work onn audio scripts" />
+    <MESSAGE value="Sounnd emitter" />
+    <MESSAGE value="Fix evenets" />
+    <MESSAGE value="." />
+    <MESSAGE value="audio manager" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="init" />
+    <MESSAGE value="scene manager" />
+    <MESSAGE value="audio config" />
+    <MESSAGE value="mixer props" />
+    <MESSAGE value="menu" />
+    <MESSAGE value="menu music" />
+    <MESSAGE value="Fix conflicts" />
+    <MESSAGE value="fix conflicts" />
+    <MESSAGE value="menu scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu scene" />
+  </component>
+</project>
