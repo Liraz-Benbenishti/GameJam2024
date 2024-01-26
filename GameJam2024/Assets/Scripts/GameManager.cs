@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         if (currentTime > 0f)
         {
             currentTime -= Time.deltaTime; // Countdown time.
-            Debug.Log("1");
+            
             // Update the UI Text to display the countdown.
             UpdateCountdownText();
         }
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         // Update the UI Text to display the current time.
         if (countdownText != null)
         {
-            Debug.Log(currentTime);
+            
             countdownText.text = "Time: " + Mathf.CeilToInt(currentTime);
         }
     }
