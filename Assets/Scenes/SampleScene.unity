@@ -153,10 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 1459166199789352272, guid: e37d9e0db5f854bf5a15e6df7929afbc, type: 3}
-  - {fileID: 1459166199789352272, guid: 4f0a8137ffb9a42489f13fab6d6ed590, type: 3}
   - {fileID: 1459166199789352272, guid: 28bb936ed1658eb4f94914a891146126, type: 3}
   - {fileID: 1459166199789352272, guid: f2181b1e405410e4ab18be680dbd7ded, type: 3}
+  - {fileID: 5625245793923528377, guid: 8c93c51c8484f449abd674f7db073101, type: 3}
+  - {fileID: 4375955980556679212, guid: cee39425182d74af7b63b5ecba13fabb, type: 3}
   minObstacleCount: 10
   maxObstacleCount: 30
   startingObstaclePosition: 15
@@ -6960,13 +6960,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2582101137640255530, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2664263075733102893, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.16
+      value: -7.65
       objectReference: {fileID: 0}
     - target: {fileID: 2664263075733102893, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.43
+      value: -4.26
       objectReference: {fileID: 0}
     - target: {fileID: 2664263075733102893, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6999,10 +7003,6 @@ PrefabInstance:
     - target: {fileID: 2664263075733102893, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: velocity
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

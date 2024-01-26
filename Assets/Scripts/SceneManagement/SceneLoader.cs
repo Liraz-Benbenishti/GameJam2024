@@ -68,11 +68,11 @@ public class SceneLoader : MonoBehaviour
 
         yield return new WaitForSeconds(0);
 
-        if (currentSceneMusic != null)
-        {
-            playMusicOn.RaiseStopEvent(currentSceneMusic.Value);
-            currentSceneMusic = null;
-        }
+        // if (currentSceneMusic != null)
+        // {
+        //     playMusicOn.RaiseStopEvent(currentSceneMusic.Value);
+        //     currentSceneMusic = null;
+        // }
 
         if (currentlyLoadedScene != null)
         {

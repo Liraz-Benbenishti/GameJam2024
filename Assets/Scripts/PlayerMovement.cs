@@ -19,10 +19,10 @@ public class PlayerMovement : MonoBehaviour
     public int maxHealth = 3;
     public int currentHealth;
     public event UnityAction onObsticle;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     // Start is called before the first frame update
@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         // Get input from the player
         float horizontalInput = Input.GetAxis("Horizontal");
 
@@ -50,20 +49,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, 0f);
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                //isGrounded = false;
                 isDoubleJumpPossible = !isDoubleJumpPossible;
-                //if (isDoubleJumpPossible)
-                //{
-                //    isDoubleJumpPossible = false;
-                //}
-                //else
-                //{
-                //    isDoubleJumpPossible = true;
-                //}
             }
         }
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -86,8 +74,35 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void ApplyPowerUp(PowerUp p)
+    {
+        if (p is SpeedPowerUp speedPowerUp)
+        {
+            Debug.Log("Apply speed boost to player");
+            velocity += speedPowerUp.speedBoost;
+        }
+        else if (p is JumpPowerUp jumpPowerUp)
+        {
+            jumpForce += jumpPowerUp.jumpBonus;
+        }
+    }
 
-            private void FixedUpdate()
+    public IEnumerator RemovePowerUp(PowerUp p)
+    {
+        yield return new WaitForSeconds(p.duration);
+
+        if (p is SpeedPowerUp speedPowerUp)
+        {
+            velocity -= speedPowerUp.speedBoost;
+            Debug.Log("Remove speed boost from player");
+        }
+        else if (p is JumpPowerUp jumpPowerUp)
+        {
+            jumpForce -= jumpPowerUp.jumpBonus;
+        }
+    }
+
+    private void FixedUpdate()
     {
         isGrounded = Physics2D.Raycast(groundChecker.position, Vector2.down, groundCheckerDistance, groundLayer);
     }
