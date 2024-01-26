@@ -18,7 +18,7 @@ public class InitializationLoader : MonoBehaviour
     private void Start()
     {
         Debug.Log("Starting to load persistent managers scene");
-        persistentManagersScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, showLoadScreen).Completed += LoadEventChannel;
+        persistentManagersScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true).Completed += LoadEventChannel;
     }
 
     private void LoadEventChannel(AsyncOperationHandle<SceneInstance> obj)
