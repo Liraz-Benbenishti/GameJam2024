@@ -233,9 +233,9 @@ MonoBehaviour:
   - {fileID: 1459166199789352272, guid: e37d9e0db5f854bf5a15e6df7929afbc, type: 3}
   minObstacleCount: 10
   maxObstacleCount: 30
-  startingObstaclePosition: 20
+  startingObstaclePosition: 100
   minObstacleDistance: 10
-  maxObstacleDistance: 10
+  maxObstacleDistance: 15
 --- !u!4 &92231156
 Transform:
   m_ObjectHideFlags: 0
@@ -488,10 +488,10 @@ MonoBehaviour:
   groundCheckerDistance: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   isDoubleJumpPossible: 0
-  gameOverEvent: {fileID: 11400000, guid: d99c8270bbe677d4686d9082613a89d9, type: 2}
-  winEvent: {fileID: 11400000, guid: a943cdcd0f9a3a84f9492399c6c6c4c3, type: 2}
+  gameOverEvent: {fileID: 11400000, guid: 57bdb5b2db76645608eb86f45227a90f, type: 2}
+  winEvent: {fileID: 11400000, guid: 417200180ea5a431f9cf146b43ce58a8, type: 2}
 --- !u!4 &577150450
 Transform:
   m_ObjectHideFlags: 0
@@ -1613,7 +1613,7 @@ MonoBehaviour:
   gameTimeInSeconds: 360
   isGameOver: 0
   countdownText: {fileID: 1491086974}
-  gameOverEvent: {fileID: 11400000, guid: d99c8270bbe677d4686d9082613a89d9, type: 2}
+  gameOverEvent: {fileID: 0}
 --- !u!4 &1780833348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4662183757692858436, guid: 0990e13ff8ce7a947893482681578ea1, type: 3}
@@ -1767,9 +1767,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f48f57fa8507543a225c9bf681a501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverEvent: {fileID: 11400000, guid: d99c8270bbe677d4686d9082613a89d9, type: 2}
+  gameOverEvent: {fileID: 11400000, guid: 57bdb5b2db76645608eb86f45227a90f, type: 2}
   gameOverPanel: {fileID: 1639354487}
-  winEvent: {fileID: 11400000, guid: a943cdcd0f9a3a84f9492399c6c6c4c3, type: 2}
+  winEvent: {fileID: 11400000, guid: 417200180ea5a431f9cf146b43ce58a8, type: 2}
   WinPanel: {fileID: 2106069934}
 --- !u!1 &2106069934
 GameObject:
