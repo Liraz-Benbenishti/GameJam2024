@@ -601,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 491328436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 83.4, y: -4.64, z: 0}
+  m_LocalPosition: {x: 83.4, y: -4.31, z: 0}
   m_LocalScale: {x: 110, y: 1.64, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1537,7 +1537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18da1d86bd19e4a27b470bde62f26abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.2
 --- !u!114 &1269062018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,7 +1558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ca8c85da605864a0f830ac8b8655a079, type: 3}
+  m_Texture: {fileID: 2800000, guid: ec5d18091f49d405ea6ffd5a174b00c4, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -7551,7 +7551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2664263075733102893, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.06
+      value: -3.73
       objectReference: {fileID: 0}
     - target: {fileID: 2664263075733102893, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalPosition.z
