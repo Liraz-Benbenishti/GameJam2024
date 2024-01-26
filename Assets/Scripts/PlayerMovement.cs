@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         // Apply movement to the Rigidbody2D
         rb.velocity = new Vector2(movement.x * velocity, rb.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded || isDoubleJumpPossible)
             {
@@ -76,9 +76,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void ApplyPowerUp(PowerUp p)
     {
+        Debug.Log($"Apply power up of type {p.name} to player");
         if (p is SpeedPowerUp speedPowerUp)
         {
-            Debug.Log("Apply speed boost to player");
             velocity += speedPowerUp.speedBoost;
         }
         else if (p is JumpPowerUp jumpPowerUp)
@@ -87,14 +87,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public IEnumerator RemovePowerUp(PowerUp p)
+    public async Task RemovePowerUp(PowerUp p)
     {
-        yield return new WaitForSeconds(p.duration);
+        Debug.Log($"waiting {p.duration}");
+        await Task.Delay(TimeSpan.FromSeconds(p.duration));
 
+        Debug.Log($"Removing power up of type {p.name} from player");
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity -= speedPowerUp.speedBoost;
-            Debug.Log("Remove speed boost from player");
         }
         else if (p is JumpPowerUp jumpPowerUp)
         {
