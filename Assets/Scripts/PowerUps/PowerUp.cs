@@ -15,6 +15,8 @@ public abstract class PowerUp : MonoBehaviour
             
             player.ApplyPowerUp(this);
             StartCoroutine(player.RemovePowerUp(this));
+            
+            transform.parent.gameObject.SetActive(false);
         }
     }
 }
