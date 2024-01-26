@@ -20,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
     public int currentHealth;
     public event UnityAction onObsticle;
 
+    public AudioCueEventChannelSO playSfxEvent;
+    public AudioConfigurationSO sfxConfig;
+    public AudioCueSO playerMotorSfx;
+    public AudioCueSO playerJumpSfx;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        playSfxEvent.RaisePlayEvent(playerMotorSfx, sfxConfig);
     }
 
     // Update is called once per frame
@@ -50,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, 0f);
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 isDoubleJumpPossible = !isDoubleJumpPossible;
+                playSfxEvent.RaisePlayEvent(playerJumpSfx, sfxConfig);
             }
         }
     }
