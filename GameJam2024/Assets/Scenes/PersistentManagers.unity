@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &2054027961
+--- !u!1 &1299986708
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,36 +131,94 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2054027963}
-  - component: {fileID: 2054027962}
+  - component: {fileID: 1299986710}
+  - component: {fileID: 1299986709}
   m_Layer: 0
-  m_Name: InitializationLoader
+  m_Name: SceneLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2054027962
+--- !u!114 &1299986709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054027961}
+  m_GameObject: {fileID: 1299986708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6c5845388bc644a98ae9f824838bd36, type: 3}
+  m_Script: {fileID: 11500000, guid: b342614b5897445d8b7f367e05e22687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  persistentManagersScene: {fileID: 11400000, guid: d5bc622d2cb924743bee6b0849f9e1af, type: 2}
-  showLoadScreen: 0
---- !u!4 &2054027963
+  loadScene: {fileID: 11400000, guid: 29e401ed254434ba6891db426ede0e20, type: 2}
+  onExitGame: {fileID: 11400000, guid: 0c917f3f7757a46da9ddf28caf472a3f, type: 2}
+  toggleLoadingScreen: {fileID: 11400000, guid: 243bed14c2bcf45a7846ade52617420b, type: 2}
+  playMusicOn: {fileID: 11400000, guid: 5d03aa171ebd5489683be32128bdac3f, type: 2}
+  audioConfig: {fileID: 11400000, guid: 7d4ca9c8746d74cc5b94b54f4df72f3d, type: 2}
+--- !u!4 &1299986710
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054027961}
+  m_GameObject: {fileID: 1299986708}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1466832495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466832497}
+  - component: {fileID: 1466832496}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1466832496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466832495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5f1ee571b714a4eb8f29c25ab208cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pool: {fileID: 11400000, guid: 584ad94657143401bb97c117b738d0d3, type: 2}
+  initialSize: 20
+  SFXEventChannel: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
+  musicEventChannel: {fileID: 11400000, guid: 5d03aa171ebd5489683be32128bdac3f, type: 2}
+  sfxVolumeEventChannel: {fileID: 11400000, guid: 90d2d384ef6dc46bc8f09114543c462c, type: 2}
+  musicVolumeEventChannel: {fileID: 11400000, guid: 74f70332a939642269d4e994eede6047, type: 2}
+  masterVolumeEventChannel: {fileID: 11400000, guid: 3783c228ea54d4bf393e2cc35105af1f, type: 2}
+  audioMixer: {fileID: 24100000, guid: 1145d803c6787453987a7fcc84ec56c4, type: 2}
+  masterVolume: 1
+  musicVolume: 1
+  sfxVolume: 1
+--- !u!4 &1466832497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466832495}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -173,4 +231,5 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2054027963}
+  - {fileID: 1299986710}
+  - {fileID: 1466832497}

@@ -16,9 +16,7 @@ public class SceneLoader : MonoBehaviour
 
     [Header("Broadcasting on")] [SerializeField]
     private BoolEventChannelSO toggleLoadingScreen;
-
-    [SerializeField] private VoidEventChannel onSceneReady;
-
+    
     [Header("Audio")] [SerializeField] AudioCueEventChannelSO playMusicOn;
     [SerializeField] AudioConfigurationSO audioConfig;
 
@@ -130,7 +128,7 @@ public class SceneLoader : MonoBehaviour
             currentSceneMusic = playMusicOn.RaisePlayEvent(currentlyLoadedScene.musicTrack, audioConfig);
         }
 
-        onSceneReady.raiseEvent();
+        // onSceneReady.raiseEvent();
         // onSceneLoaded.RaiseEvent(s);
     }
 
