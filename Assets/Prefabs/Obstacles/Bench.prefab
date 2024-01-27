@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 150824588202708887}
   - component: {fileID: 902732532403401661}
   - component: {fileID: 7716129117499929300}
+  - component: {fileID: 557570390606326678}
   m_Layer: 0
   m_Name: Bench
   m_TagString: obstacle
@@ -271,3 +272,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.7061977, y: 0.04695797}
   m_EdgeRadius: 0
+--- !u!114 &557570390606326678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562248407620779822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fbb1ec238034168a09b0ea33a662bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
+  sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
+  collideSfx: {fileID: 11400000, guid: f13debb2e5a0043319dced5434ce73a9, type: 2}

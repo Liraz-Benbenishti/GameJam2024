@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 7489174189770285000}
   - component: {fileID: 2105941932661078927}
   - component: {fileID: 5666380873799105470}
+  - component: {fileID: 8534656734943881287}
   m_Layer: 0
   m_Name: PileOfBeams
   m_TagString: obstacle
@@ -156,6 +157,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01665926, y: 0.38612986}
   m_EdgeRadius: 0
+--- !u!114 &8534656734943881287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5340072550779263709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fbb1ec238034168a09b0ea33a662bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
+  sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
+  collideSfx: {fileID: 11400000, guid: 289c64dad912743419e66325a681439b, type: 2}
 --- !u!1 &5361552917482943446
 GameObject:
   m_ObjectHideFlags: 0

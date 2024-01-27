@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 912921247755520133}
   - component: {fileID: 5963681288841661648}
   - component: {fileID: 5852566430719250283}
+  - component: {fileID: 129692462057263720}
   m_Layer: 0
   m_Name: ScaffoldingObstacleParent
   m_TagString: obstacle
@@ -156,6 +157,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.11617863, y: 1.3458738}
   m_EdgeRadius: 0
+--- !u!114 &129692462057263720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2790430695849541084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fbb1ec238034168a09b0ea33a662bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
+  sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
+  collideSfx: {fileID: 11400000, guid: f079e4d4dc1d34c1c9999c44b3f54c14, type: 2}
 --- !u!1 &3192025095103566660
 GameObject:
   m_ObjectHideFlags: 0

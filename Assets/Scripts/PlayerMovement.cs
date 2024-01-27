@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "obstacle")
+        if (collision.gameObject.CompareTag("obstacle"))
         {
             Debug.Log("hurting playyer");
             currentHealth--;
@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        else if (collision.gameObject.tag == "Finish")
+        else if (collision.gameObject.CompareTag("Finish"))
         {
             winEvent.raiseEvent();
         }
