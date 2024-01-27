@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -20,6 +20,18 @@ public class PlayerMovement : MonoBehaviour
     public int currentHealth;
     public event UnityAction onObsticle;
 
+    public AudioCueEventChannelSO playSfxEvent;
+    public AudioConfigurationSO sfxConfig;
+    public AudioCueSO playerMotorSfx;
+    public AudioCueSO playerJumpSfx;
+    public AudioCueSO playerLandSfx;
+    public AudioCueSO winSfx;
+    public AudioCueSO collectPowerUpSfx;
+    public AudioCueSO fadePowerUpSfx;
+
+    private float lastHitTime;
+    public float invinsibleTime = 0.5f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        playSfxEvent.RaisePlayEvent(playerMotorSfx, sfxConfig);
     }
 
     // Update is called once per frame
@@ -43,24 +56,27 @@ public class PlayerMovement : MonoBehaviour
         // Apply movement to the Rigidbody2D
         rb.velocity = new Vector2(movement.x * velocity, rb.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded || isDoubleJumpPossible)
             {
                 rb.velocity = new Vector2(rb.velocity.x, 0f);
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 isDoubleJumpPossible = !isDoubleJumpPossible;
+                playSfxEvent.RaisePlayEvent(playerJumpSfx, sfxConfig);
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "obstacle")
+        if (collision.gameObject.CompareTag("obstacle") && Time.time > lastHitTime + invinsibleTime)
         {
-            Debug.Log("hurting playyer");
+            Debug.Log($"hurting playyer by { collision.gameObject.name }");
             currentHealth--;
             onObsticle?.Invoke();
+
+            lastHitTime = Time.time;
 
             if (currentHealth == 0)
             {
@@ -68,17 +84,19 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        else if (collision.gameObject.tag == "Finish")
+        else if (collision.gameObject.CompareTag("Finish"))
         {
+            playSfxEvent.RaisePlayEvent(winSfx, sfxConfig);
             winEvent.raiseEvent();
         }
     }
 
     public void ApplyPowerUp(PowerUp p)
     {
+        Debug.Log($"Apply power up of type {p.name} to player");
+        playSfxEvent.RaisePlayEvent(collectPowerUpSfx, sfxConfig);
         if (p is SpeedPowerUp speedPowerUp)
         {
-            Debug.Log("Apply speed boost to player");
             velocity += speedPowerUp.speedBoost;
         }
         else if (p is JumpPowerUp jumpPowerUp)
@@ -87,14 +105,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public IEnumerator RemovePowerUp(PowerUp p)
+    public async Task RemovePowerUp(PowerUp p)
     {
-        yield return new WaitForSeconds(p.duration);
+        await Task.Delay(TimeSpan.FromSeconds(p.duration));
 
+        Debug.Log($"Removing power up of type {p.name} from player");
+        playSfxEvent.RaisePlayEvent(fadePowerUpSfx, sfxConfig);
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity -= speedPowerUp.speedBoost;
-            Debug.Log("Remove speed boost from player");
         }
         else if (p is JumpPowerUp jumpPowerUp)
         {
@@ -104,7 +123,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        var previous = isGrounded;
         isGrounded = Physics2D.Raycast(groundChecker.position, Vector2.down, groundCheckerDistance, groundLayer);
+        if (previous == false && isGrounded)
+        {
+            playSfxEvent.RaisePlayEvent(playerLandSfx, sfxConfig);
+        }
     }
 
     // Draw Gizmo to visualize the ground check
