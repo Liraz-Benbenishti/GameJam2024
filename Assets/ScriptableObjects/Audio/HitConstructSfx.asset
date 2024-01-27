@@ -17,3 +17,10 @@ MonoBehaviour:
   - sequenceMode: 0
     audioClips:
     - {fileID: 8300000, guid: aa6af27d73fe046a1b46f012b6ae09c5, type: 3}
+  - sequenceMode: 0
+    audioClips:
+    - {fileID: 8300000, guid: f3650d3bbc4e849d4922eb3371435cf2, type: 3}
+    - {fileID: 8300000, guid: 184d3f3594ac14fe084e7a4ef77df768, type: 3}
+    - {fileID: 8300000, guid: 031b4e68baa8a440bacf651d4d1184dd, type: 3}
+    - {fileID: 8300000, guid: a3bf1e4b02aa949cc86f4cc37bdc92e7, type: 3}
+    - {fileID: 8300000, guid: 8a67dc4fbdfe945aa909dcbd3ec4ea65, type: 3}
