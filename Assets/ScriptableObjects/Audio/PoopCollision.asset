@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: PoopCollision
   m_EditorClassIdentifier: 
   looping: 0
-  _audioClipGroups: []
+  _audioClipGroups:
+  - sequenceMode: 0
+    audioClips:
+    - {fileID: 8300000, guid: 38b355ae764c0ad43af089dabb0fd2ec, type: 3}

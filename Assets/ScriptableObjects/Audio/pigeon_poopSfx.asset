@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: pigeon_poopSfx
   m_EditorClassIdentifier: 
   looping: 0
-  _audioClipGroups: []
+  _audioClipGroups:
+  - sequenceMode: 0
+    audioClips:
+    - {fileID: 8300000, guid: c649708064b629c478a4c9727b98e786, type: 3}
