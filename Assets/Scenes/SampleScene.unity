@@ -748,7 +748,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.34}
+  m_LocalPosition: {x: 0, y: 0, z: -8.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -991,7 +991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369ebff9134f0be469b8546963050857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4.5
 --- !u!4 &762611204
 Transform:
   m_ObjectHideFlags: 0
@@ -1526,30 +1526,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5235546259319170670, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
-      propertyPath: m_Mass
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235546259319170670, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235546259319170670, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
-      propertyPath: m_GravityScale
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5710975708706483379, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.78787
-      objectReference: {fileID: 0}
-    - target: {fileID: 5710975708706483379, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.78787
-      objectReference: {fileID: 0}
-    - target: {fileID: 5710975708706483379, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.78787
-      objectReference: {fileID: 0}
     - target: {fileID: 5710975708706483379, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.053

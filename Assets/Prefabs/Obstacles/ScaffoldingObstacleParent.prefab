@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3063267969943695633}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ScaffoldingObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5852566430719250283}
   - component: {fileID: 129692462057263720}
   - component: {fileID: 4094688159197960532}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ScaffoldingObstacleParent
   m_TagString: obstacle
   m_Icon: {fileID: 0}
@@ -127,6 +127,7 @@ MonoBehaviour:
   playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
   sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
   collideSfx: {fileID: 11400000, guid: f079e4d4dc1d34c1c9999c44b3f54c14, type: 2}
+  shouldDestoryOnCillision: 0
 --- !u!68 &4094688159197960532
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -142,7 +143,7 @@ EdgeCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -179,7 +180,7 @@ GameObject:
   - component: {fileID: 1041303820104033080}
   - component: {fileID: 6396180408054209938}
   - component: {fileID: 8801768788771714375}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Scaffolding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5584031729897772938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
