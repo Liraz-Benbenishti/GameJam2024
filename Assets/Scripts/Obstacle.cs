@@ -6,11 +6,20 @@ public class Obstacle : MonoBehaviour
     public AudioConfigurationSO sfxConfig;
     public AudioCueSO collideSfx;
 
+    public bool shouldDestoryOnCillision;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collideSfx != null && other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            playSfxEvent.RaisePlayEvent(collideSfx, sfxConfig);
+            if (collideSfx != null)
+            {
+                playSfxEvent.RaisePlayEvent(collideSfx, sfxConfig);
+            }
+            if (shouldDestoryOnCillision)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
