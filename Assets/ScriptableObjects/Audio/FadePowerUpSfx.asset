@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: FadePowerUpSfx
   m_EditorClassIdentifier: 
   looping: 0
-  _audioClipGroups: []
+  _audioClipGroups:
+  - sequenceMode: 0
+    audioClips:
+    - {fileID: 8300000, guid: 608c81364956d4775a8c8b50a279603c, type: 3}
