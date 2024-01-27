@@ -209,3 +209,4 @@ MonoBehaviour:
   playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
   sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
   collideSfx: {fileID: 11400000, guid: 7267e14322be5644ab3464e164948558, type: 2}
+  shouldDestoryOnCillision: 1

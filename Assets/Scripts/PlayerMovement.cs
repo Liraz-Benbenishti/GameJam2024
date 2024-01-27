@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     private float lastHitTime;
     public float invinsibleTime = 0.5f;
 
+    public ParticleSystem powerUpVfx;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -95,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log($"Apply power up of type {p.name} to player");
         playSfxEvent.RaisePlayEvent(collectPowerUpSfx, sfxConfig);
+        powerUpVfx.Play();
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity += speedPowerUp.speedBoost;
@@ -111,6 +114,7 @@ public class PlayerMovement : MonoBehaviour
 
         Debug.Log($"Removing power up of type {p.name} from player");
         playSfxEvent.RaisePlayEvent(fadePowerUpSfx, sfxConfig);
+        powerUpVfx.Stop();
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity -= speedPowerUp.speedBoost;
