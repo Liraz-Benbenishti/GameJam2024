@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioCueSO playerJumpSfx;
     public AudioCueSO playerLandSfx;
     public AudioCueSO winSfx;
+    public AudioCueSO collectPowerUpSfx;
+    public AudioCueSO fadePowerUpSfx;
 
     private void Awake()
     {
@@ -87,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
     public void ApplyPowerUp(PowerUp p)
     {
         Debug.Log($"Apply power up of type {p.name} to player");
+        playSfxEvent.RaisePlayEvent(collectPowerUpSfx, sfxConfig);
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity += speedPowerUp.speedBoost;
@@ -99,10 +102,10 @@ public class PlayerMovement : MonoBehaviour
 
     public async Task RemovePowerUp(PowerUp p)
     {
-        Debug.Log($"waiting {p.duration}");
         await Task.Delay(TimeSpan.FromSeconds(p.duration));
 
         Debug.Log($"Removing power up of type {p.name} from player");
+        playSfxEvent.RaisePlayEvent(fadePowerUpSfx, sfxConfig);
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity -= speedPowerUp.speedBoost;
