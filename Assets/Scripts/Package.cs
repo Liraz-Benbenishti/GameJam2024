@@ -4,22 +4,14 @@ using UnityEngine;
 
 public class Package : MonoBehaviour
 {
-    public float health = 100f;
-
-    // Start is called before the first frame update
-    void Start()
+    public VoidEventChannel gameOverEvent;
+    public LayerMask groundLayer;
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void getHurt(float damage)
-    {
-        health -= damage;
+        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.name == "Floor")
+        {
+            gameOverEvent.raiseEvent();
+        }
     }
 }
