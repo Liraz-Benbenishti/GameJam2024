@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 8568293863274374969}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,10 +233,12 @@ MonoBehaviour:
   winEvent: {fileID: 11400000, guid: 417200180ea5a431f9cf146b43ce58a8, type: 2}
   maxHealth: 3
   currentHealth: 0
-  playSfxEvent: {fileID: 0}
-  sfxConfig: {fileID: 0}
-  playerMotorSfx: {fileID: 0}
-  playerJumpSfx: {fileID: 0}
+  playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
+  sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
+  playerMotorSfx: {fileID: 11400000, guid: c6fda194534d441d2b62e2280d0da9dd, type: 2}
+  playerJumpSfx: {fileID: 11400000, guid: 6f136c05a603b42cdab0e652d4cf5f54, type: 2}
+  playerLandSfx: {fileID: 11400000, guid: 58df20d4745cc489398cb5be9aab44f8, type: 2}
+  winSfx: {fileID: 11400000, guid: c038b94561cf5435d8c53f46f5bb0a88, type: 2}
 --- !u!50 &1964676739256168153
 Rigidbody2D:
   serializedVersion: 4

@@ -8044,6 +8044,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
+      propertyPath: winSfx
+      value: 
+      objectReference: {fileID: 11400000, guid: c038b94561cf5435d8c53f46f5bb0a88, type: 2}
+    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: sfxConfig
       value: 
       objectReference: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}

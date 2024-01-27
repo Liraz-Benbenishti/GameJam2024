@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioCueSO playerMotorSfx;
     public AudioCueSO playerJumpSfx;
     public AudioCueSO playerLandSfx;
+    public AudioCueSO winSfx;
 
     private void Awake()
     {
@@ -78,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
         else if (collision.gameObject.CompareTag("Finish"))
         {
+            playSfxEvent.RaisePlayEvent(winSfx, sfxConfig);
             winEvent.raiseEvent();
         }
     }
