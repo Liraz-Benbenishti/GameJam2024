@@ -153,15 +153,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 5625245793923528377, guid: 8c93c51c8484f449abd674f7db073101, type: 3}
-  - {fileID: 4375955980556679212, guid: cee39425182d74af7b63b5ecba13fabb, type: 3}
-  - {fileID: 5562248407620779822, guid: e3727ccce56d94a42aa2ab2981ac3cd8, type: 3}
-  - {fileID: 5340072550779263709, guid: e10da2015577662468dc52526021c795, type: 3}
   - {fileID: 3653094236085451847, guid: 48e2658ae8ef8e144b1138bad0f4976e, type: 3}
   - {fileID: 2790430695849541084, guid: c43694412525d90448de8010760e60ac, type: 3}
-  minObstacleCount: 10
+  - {fileID: 5340072550779263709, guid: e10da2015577662468dc52526021c795, type: 3}
+  - {fileID: 5562248407620779822, guid: e3727ccce56d94a42aa2ab2981ac3cd8, type: 3}
+  - {fileID: 4375955980556679212, guid: cee39425182d74af7b63b5ecba13fabb, type: 3}
+  - {fileID: 5625245793923528377, guid: 8c93c51c8484f449abd674f7db073101, type: 3}
+  minObstacleCount: 20
   maxObstacleCount: 30
-  startingObstaclePosition: 15
+  startingObstaclePosition: 11
   minObstacleDistance: 10
   maxObstacleDistance: 15
 --- !u!4 &92231156

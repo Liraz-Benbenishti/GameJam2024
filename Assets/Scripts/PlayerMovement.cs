@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
     public AudioCueSO collectPowerUpSfx;
     public AudioCueSO fadePowerUpSfx;
 
+    private float lastHitTime;
+    public float invinsibleTime = 0.5f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -67,11 +70,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("obstacle"))
+        if (collision.gameObject.CompareTag("obstacle") && Time.time > lastHitTime + invinsibleTime)
         {
-            Debug.Log("hurting playyer");
+            Debug.Log($"hurting playyer by { collision.gameObject.name }");
             currentHealth--;
             onObsticle?.Invoke();
+
+            lastHitTime = Time.time;
 
             if (currentHealth == 0)
             {
