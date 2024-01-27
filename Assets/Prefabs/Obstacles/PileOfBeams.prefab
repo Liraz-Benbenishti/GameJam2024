@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2624872009282612398}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ConstractionWoodObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5666380873799105470}
   - component: {fileID: 8534656734943881287}
   - component: {fileID: 7563580335813018622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PileOfBeams
   m_TagString: obstacle
   m_Icon: {fileID: 0}
@@ -127,6 +127,7 @@ MonoBehaviour:
   playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
   sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
   collideSfx: {fileID: 11400000, guid: 289c64dad912743419e66325a681439b, type: 2}
+  shouldDestoryOnCillision: 0
 --- !u!68 &7563580335813018622
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -177,7 +178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 899748553615688503}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +212,7 @@ GameObject:
   - component: {fileID: 1128876924158363483}
   - component: {fileID: 4432777262859412438}
   - component: {fileID: 5654138007410665731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ConstructionWood
   m_TagString: Untagged
   m_Icon: {fileID: 0}

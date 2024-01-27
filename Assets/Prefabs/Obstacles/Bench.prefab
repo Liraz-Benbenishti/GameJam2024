@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4570089952678383506}
   - component: {fileID: 4023330777707153293}
   - component: {fileID: 4996687164558138663}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bench
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6763135343192378584}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BenchObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3640284745461116371}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 902732532403401661}
   - component: {fileID: 557570390606326678}
   - component: {fileID: 806720033846217191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bench
   m_TagString: obstacle
   m_Icon: {fileID: 0}
@@ -242,6 +242,7 @@ MonoBehaviour:
   playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
   sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
   collideSfx: {fileID: 11400000, guid: f13debb2e5a0043319dced5434ce73a9, type: 2}
+  shouldDestoryOnCillision: 0
 --- !u!68 &806720033846217191
 EdgeCollider2D:
   m_ObjectHideFlags: 0
