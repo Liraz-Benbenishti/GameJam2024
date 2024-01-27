@@ -187,6 +187,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2675679217793951756, guid: d348ca9eec390684ea088023b811470c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5765284778458642783, guid: d348ca9eec390684ea088023b811470c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.36
@@ -231,7 +235,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: StreetPerformer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3882947262518129107, guid: d348ca9eec390684ea088023b811470c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1672,8 +1677,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5235546259319170670, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
+      propertyPath: m_Mass
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235546259319170670, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
       propertyPath: m_AngularDrag
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235546259319170670, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5710975708706483379, guid: 0aa45b647899cd64687fa1260ee8f3d2, type: 3}
       propertyPath: m_LocalScale.x
@@ -7995,12 +8008,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2582101137640255530, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_Name
-      value: Player
+    - target: {fileID: 750936975148543014, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 2582101137640255530, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_TagString
+      propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2664263075733102893, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
@@ -8043,30 +8056,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: winSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: c038b94561cf5435d8c53f46f5bb0a88, type: 2}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: sfxConfig
-      value: 
-      objectReference: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: playSfxEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: playerJumpSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: 6f136c05a603b42cdab0e652d4cf5f54, type: 2}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: playerLandSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: 58df20d4745cc489398cb5be9aab44f8, type: 2}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: playerMotorSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: c6fda194534d441d2b62e2280d0da9dd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
