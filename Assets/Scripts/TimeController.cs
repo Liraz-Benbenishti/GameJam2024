@@ -26,6 +26,11 @@ public class TimeController : MonoBehaviour
         Time.timeScale = timeScale;
     }
 
+    public void ResetTime()
+    {
+        timeScale = 1;
+    }
+
     void StopGame()
     {
         timeScale = 0;

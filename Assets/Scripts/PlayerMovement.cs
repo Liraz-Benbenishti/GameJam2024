@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioCueSO playerJumpSfx;
     public AudioCueSO playerLandSfx;
     public AudioCueSO winSfx;
+    public AudioCueSO loseSfx;
     public AudioCueSO collectPowerUpSfx;
     public AudioCueSO fadePowerUpSfx;
 
@@ -82,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (currentHealth == 0)
             {
+                playSfxEvent.RaisePlayEvent(loseSfx, sfxConfig);
                 gameOverEvent.raiseEvent();
             }
         }
