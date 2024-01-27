@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a408102ac5ae74d049423ceb871bc999, type: 3}
-  m_Name: PlayerMotorSfx
+  m_Name: PlayerLandSfx
   m_EditorClassIdentifier: 
-  looping: 1
+  looping: 0
   _audioClipGroups:
   - sequenceMode: 0
     audioClips:
-    - {fileID: 8300000, guid: a20dcbde9446d48f7b282b2321f1c428, type: 3}
+    - {fileID: 8300000, guid: af0593bd3e9824ef88a5015a0b48a1a5, type: 3}
+    - {fileID: 8300000, guid: 3e02e24525d8e4f9ab737eed5d9dc325, type: 3}

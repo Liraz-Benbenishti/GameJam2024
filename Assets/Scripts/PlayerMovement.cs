@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioConfigurationSO sfxConfig;
     public AudioCueSO playerMotorSfx;
     public AudioCueSO playerJumpSfx;
+    public AudioCueSO playerLandSfx;
 
     private void Awake()
     {
@@ -112,7 +113,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        var previous = isGrounded;
         isGrounded = Physics2D.Raycast(groundChecker.position, Vector2.down, groundCheckerDistance, groundLayer);
+        if (previous == false && isGrounded)
+        {
+            playSfxEvent.RaisePlayEvent(playerLandSfx, sfxConfig);
+        }
     }
 
     // Draw Gizmo to visualize the ground check

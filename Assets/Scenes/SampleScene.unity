@@ -8056,6 +8056,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6f136c05a603b42cdab0e652d4cf5f54, type: 2}
     - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
+      propertyPath: playerLandSfx
+      value: 
+      objectReference: {fileID: 11400000, guid: 58df20d4745cc489398cb5be9aab44f8, type: 2}
+    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: playerMotorSfx
       value: 
       objectReference: {fileID: 11400000, guid: c6fda194534d441d2b62e2280d0da9dd, type: 2}

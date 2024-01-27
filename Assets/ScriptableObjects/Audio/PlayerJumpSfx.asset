@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: PlayerJumpSfx
   m_EditorClassIdentifier: 
   looping: 0
-  _audioClipGroups: []
+  _audioClipGroups:
+  - sequenceMode: 0
+    audioClips:
+    - {fileID: 8300000, guid: eb749519c049c4120966332bee18f543, type: 3}
