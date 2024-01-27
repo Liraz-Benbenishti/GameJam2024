@@ -1204,7 +1204,15 @@ PrefabInstance:
       value: Victory
       objectReference: {fileID: 0}
     - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
@@ -1212,12 +1220,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1765105637}
     - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1252647375}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadMenuScene
       objectReference: {fileID: 0}
     - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TimeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7115,7 +7143,15 @@ PrefabInstance:
       value: Game Over
       objectReference: {fileID: 0}
     - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
@@ -7123,12 +7159,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1765105637}
     - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1252647375}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadMenuScene
       objectReference: {fileID: 0}
     - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TimeController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710780905515321437, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
