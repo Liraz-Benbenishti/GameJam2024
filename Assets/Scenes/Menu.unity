@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465788, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -734,6 +734,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5283182525599837703, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_text
+      value: "Take the wildest ride of your life in \"Bolt Delivery Blitz\"! Your
+        mission, should you choose to accept it (and trust us, you will), is to chauffeur
+        that oh-so-precious package from the store to your eagerly awaiting customer.
+        But here's the twist \u2013 you're not just dodging everyday obstacles; you're
+        evading street performers with dance moves that defy physics and dodging
+        pigeons that have their sights set on a new canvas (hint: it's you). And
+        oh, did we mention? If that fragile package takes a nosedive, it's a game
+        over! So, buckle up, rev that motorcycle, and let the hilarity unfold as
+        you navigate the chaos of delivery with all the finesse of a unicycle-riding
+        cat. May the absurdity be ever in your favor!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283182525599837703, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_fontSize
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283182525599837703, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654580861904056807, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 171.2762
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654580861904056807, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -547.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6206861641704423201, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_SizeDelta.x
       value: 456
@@ -1353,6 +1382,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Continue
       objectReference: {fileID: 0}
+    - target: {fileID: 2481571705819535701, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -247.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4443620641184077085, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1432,6 +1465,42 @@ PrefabInstance:
     - target: {fileID: 4443620641184077085, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283182525599837703, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_text
+      value: 'Controls:
+
+        Spacebar- Jump / Double Jump
+
+        Right - Thrust
+        engine forward
+
+        Left - Slow down and move backwards
+
+        Green
+        powerup - Speed
+
+        Blue powerup - Super Jump'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283182525599837703, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_fontSize
+      value: 45.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283182525599837703, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_margin.w
+      value: -51.947998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283182525599837703, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283182525599837703, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654580861904056807, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -487
       objectReference: {fileID: 0}
     - target: {fileID: 6206861641704423201, guid: 9436f2a4f90c84ec7ba5cc43e3200cfe, type: 3}
       propertyPath: m_SizeDelta.x

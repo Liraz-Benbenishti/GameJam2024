@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isDoubleJumpPossible = false;
     public VoidEventChannel gameOverEvent;
     public VoidEventChannel winEvent;
-    public int maxHealth = 3;
+    public int maxHealth = 5;
     public int currentHealth;
     public event UnityAction onObsticle;
 
@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     public float invinsibleTime = 0.5f;
 
     public ParticleSystem powerUpVfx;
+    public ParticleSystem hurtVfx;
 
     private void Awake()
     {
@@ -75,7 +76,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("obstacle") && Time.time > lastHitTime + invinsibleTime)
         {
-            Debug.Log($"hurting playyer by { collision.gameObject.name }");
+            Debug.Log($"hurting player by { collision.gameObject.name }");
+            hurtVfx.Play();
             currentHealth--;
             onObsticle?.Invoke();
 
@@ -95,6 +97,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("obstacle"))
+        {
+            hurtVfx.Stop();
+        }
+    }
+            
     public void ApplyPowerUp(PowerUp p)
     {
         Debug.Log($"Apply power up of type {p.name} to player");
