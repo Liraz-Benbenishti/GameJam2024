@@ -950,9 +950,15 @@ Transform:
   m_GameObject: {fileID: 2596623253881400904}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.9921881, z: -0, w: -0.12475092}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: -0.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+=======
+  m_LocalPosition: {x: 0, y: -0.75, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
+>>>>>>> Stashed changes
   m_Children:
   - {fileID: 5422056435084098590}
   - {fileID: 989691544871805621}
@@ -974,7 +980,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d4db1c9eb63451f47b9c77b33fea2768, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -2228,7 +2234,7 @@ Transform:
   m_GameObject: {fileID: 5325665538441138478}
   serializedVersion: 2
   m_LocalRotation: {x: 0.05843149, y: -0.029800905, z: -0.101600096, w: 0.99266064}
-  m_LocalPosition: {x: 0.241, y: 0.6583673, z: 0.995}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2700,8 +2706,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5765284778458642783}
+<<<<<<< Updated upstream
   - component: {fileID: 3882947262518129107}
   m_Layer: 0
+=======
+  - component: {fileID: 7924228991929184632}
+  - component: {fileID: 18665686319705759}
+  - component: {fileID: 3694773942247462168}
+  - component: {fileID: 3189580558592353681}
+  m_Layer: 7
+>>>>>>> Stashed changes
   m_Name: StreetPerformer
   m_TagString: obstacle
   m_Icon: {fileID: 0}
@@ -2717,22 +2731,38 @@ Transform:
   m_GameObject: {fileID: 6491936473203998678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6249652, y: -3.432256, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2675679217793951756}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!70 &3882947262518129107
 CapsuleCollider2D:
+=======
+--- !u!114 &7924228991929184632
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6491936473203998678}
   m_Enabled: 1
-  m_Density: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5ce009505665f47ae37a8ad1f82627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Moves: {fileID: 1233178280920854937}
+--- !u!65 &18665686319705759
+BoxCollider:
+>>>>>>> Stashed changes
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491936473203998678}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2741,24 +2771,68 @@ CapsuleCollider2D:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
+<<<<<<< Updated upstream
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.038488746, y: 0.9414934}
   m_Size: {x: 0.79014564, y: 1.9000437}
   m_Direction: 0
+=======
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6136315, y: 0.786993, z: 0.5777466}
+  m_Center: {x: 0, y: -0.29210722, z: 0}
+--- !u!65 &3694773942247462168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491936473203998678}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.029159307, y: 0.6955127, z: 0.5248054}
+  m_Center: {x: -0.33, y: -0.32077935, z: -0.14273232}
+--- !u!54 &3189580558592353681
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491936473203998678}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 0
+>>>>>>> Stashed changes
 --- !u!1 &6529767956161376273
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,9 +11,9 @@ public class ObstacleGenerator : MonoBehaviour
     public float startingObstaclePosition = 100;
     public float minObstacleDistance = 10;
     public float maxObstacleDistance = 15;
-
+    public Transform Z_pos;
     private Transform environment_transform;
-
+    public int Zdistance;
     private void Awake()
     {
         environment_transform = transform.parent;
@@ -34,6 +34,6 @@ public class ObstacleGenerator : MonoBehaviour
     void SpawnObstacle(float xPosition)
     {
         int randomIndex = Random.Range(0, obstaclePrefabs.Length);
-        Instantiate(obstaclePrefabs[randomIndex], new Vector2(xPosition, 0), Quaternion.identity, environment_transform);
+        Instantiate(obstaclePrefabs[randomIndex], new Vector3(xPosition, 0, Zdistance), Quaternion.identity, environment_transform);
     }
 }

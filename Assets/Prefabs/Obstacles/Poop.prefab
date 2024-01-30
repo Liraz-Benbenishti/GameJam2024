@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 352676319644165006}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.067}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.19240762, y: 0.40213192, z: 0.19240762}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -92,7 +92,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8565875053393396254}
+<<<<<<< Updated upstream
   - component: {fileID: 316526127281409370}
+=======
+  - component: {fileID: 1452092823376782156}
+  - component: {fileID: 7507717609863043217}
+  - component: {fileID: 4089439181394554620}
+  - component: {fileID: 4732981581192782474}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Poop
   m_TagString: obstacle
@@ -116,15 +123,78 @@ Transform:
   - {fileID: 2443008558945157612}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!70 &316526127281409370
 CapsuleCollider2D:
+=======
+--- !u!114 &1452092823376782156
+MonoBehaviour:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7501281534948576311}
   m_Enabled: 1
+<<<<<<< Updated upstream
   m_Density: 1
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369ebff9134f0be469b8546963050857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.9
+--- !u!114 &7507717609863043217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7501281534948576311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fbb1ec238034168a09b0ea33a662bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
+  sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
+  collideSfx: {fileID: 11400000, guid: 7267e14322be5644ab3464e164948558, type: 2}
+  shouldDestoryOnCillision: 1
+--- !u!54 &4089439181394554620
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7501281534948576311}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &4732981581192782474
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7501281534948576311}
+>>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -133,6 +203,7 @@ CapsuleCollider2D:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
+<<<<<<< Updated upstream
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -151,3 +222,13 @@ CapsuleCollider2D:
   m_Offset: {x: -0.00000011920929, y: 0.00167647}
   m_Size: {x: 0.21839643, y: 0.4487993}
   m_Direction: 0
+=======
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.12
+  m_Height: 0.57
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
