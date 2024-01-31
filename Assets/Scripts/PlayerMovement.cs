@@ -82,14 +82,14 @@ public class PlayerMovement : MonoBehaviour
             hurtVfx.Play();
             currentHealth--;
             onObsticle?.Invoke();
-            BoxCollider[] obsColliders= collision.gameObject.GetComponents<BoxCollider>();
-            foreach(Collider box in obsColliders)
-            {
-                if (box.isTrigger == false)
-                {
-                    box.gameObject.GetComponent<BoxCollider>().gameObject.SetActive(false);
-                }
-            }
+            //BoxCollider[] obsColliders= collision.gameObject.GetComponents<BoxCollider>();
+            //foreach(Collider box in obsColliders)
+            //{
+            //    if (box.isTrigger == false)
+            //    {
+            //        box.gameObject.GetComponent<BoxCollider>().enabled = false;
+            //    }
+            //}
 
             lastHitTime = Time.time;
 
