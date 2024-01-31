@@ -157,7 +157,7 @@ MonoBehaviour:
   - {fileID: 1459166199789352272, guid: 28bb936ed1658eb4f94914a891146126, type: 3}
   - {fileID: 6491936473203998678, guid: d348ca9eec390684ea088023b811470c, type: 3}
   - {fileID: 1459166199789352272, guid: f2181b1e405410e4ab18be680dbd7ded, type: 3}
-  - {fileID: 323390370882039103, guid: 99b219269edd25540abe201902f8aa68, type: 3}
+  - {fileID: 874641821239185381, guid: ab3119844c3cf814093961ec552d877e, type: 3}
   minObstacleCount: 10
   maxObstacleCount: 30
   startingObstaclePosition: 15
