@@ -256,11 +256,7 @@ MonoBehaviour:
   masterVolumeEventChannel: {fileID: 11400000, guid: 3783c228ea54d4bf393e2cc35105af1f, type: 2}
   audioMixer: {fileID: 24100000, guid: 1145d803c6787453987a7fcc84ec56c4, type: 2}
   masterVolume: 1
-<<<<<<< Updated upstream
-  musicVolume: 1
-=======
   musicVolume: 0.95
->>>>>>> Stashed changes
   sfxVolume: 1
 
 --- !u!4 &1466832497
