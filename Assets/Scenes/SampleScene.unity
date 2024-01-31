@@ -8353,7 +8353,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1765105637}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: LoadMenuScene
         m_Mode: 1
@@ -8365,7 +8365,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1252647375}
         m_TargetAssemblyTypeName: TimeController, Assembly-CSharp
         m_MethodName: ResetTime
         m_Mode: 1
@@ -8474,6 +8474,10 @@ PrefabInstance:
     - target: {fileID: 1733336361792566261, guid: c93cb05f9b5640d409d87708f63d522a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673919957635554767, guid: c93cb05f9b5640d409d87708f63d522a, type: 3}
+      propertyPath: m_Mass
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3673919957635554767, guid: c93cb05f9b5640d409d87708f63d522a, type: 3}
       propertyPath: m_Constraints
@@ -8838,7 +8842,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1765105637}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: LoadMenuScene
         m_Mode: 1
@@ -8850,7 +8854,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1252647375}
         m_TargetAssemblyTypeName: TimeController, Assembly-CSharp
         m_MethodName: ResetTime
         m_Mode: 1
@@ -10102,7 +10106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4770168057875030392, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_Interpolate
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8895274309280877663, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalPosition.y
