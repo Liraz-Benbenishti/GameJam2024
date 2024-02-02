@@ -15,28 +15,20 @@ public class Pigeon : MonoBehaviour
     public AudioConfigurationSO sfxConfig;
     public AudioCueSO poopingSfx;
 
-
     private void Awake()
     {
         player_movement = GameObject.FindGameObjectWithTag("Player");
         environment_transform = transform.parent;
-
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
         float distance_to_player = Vector3.Distance(transform.position, player_movement.transform.position);
-        if(distance_to_player <= poop_dropping && !isPoopDropped)
+        if (distance_to_player <= poop_dropping && !isPoopDropped)
         {
             dropPoop();
             isPoopDropped = true;
-}
+        }
     }
 
     private void dropPoop()
