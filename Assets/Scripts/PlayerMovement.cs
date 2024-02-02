@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    private Rigidbody rb;
     public float velocity = 5f;
     public float jumpForce = 10f;
     public bool isGrounded = true;
@@ -33,12 +33,13 @@ public class PlayerMovement : MonoBehaviour
     private float lastHitTime;
     public float invinsibleTime = 0.5f;
 
-    public ParticleSystem powerUpVfx;
+    public ParticleSystem powerUpVfx1;
+    public ParticleSystem powerUpVfx2;
     public ParticleSystem hurtVfx;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Start is called before the first frame update
@@ -55,24 +56,25 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
 
         // Calculate movement vector
-        Vector2 movement = new Vector2(horizontalInput, 0f);
+        Vector3 movement = new Vector3(horizontalInput, 0f, 0f);
 
-        // Apply movement to the Rigidbody2D
-        rb.velocity = new Vector2(movement.x * velocity, rb.velocity.y);
+        // Apply movement to the Rigidbody
+        rb.velocity = new Vector3(movement.x * velocity, rb.velocity.y, 0);
 
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded || isDoubleJumpPossible)
             {
-                rb.velocity = new Vector2(rb.velocity.x, 0f);
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                rb.velocity = new Vector3(rb.velocity.x, 0, 0f);
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
                 isDoubleJumpPossible = !isDoubleJumpPossible;
                 playSfxEvent.RaisePlayEvent(playerJumpSfx, sfxConfig);
             }
         }
+
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("obstacle") && Time.time > lastHitTime + invinsibleTime)
         {
@@ -80,6 +82,16 @@ public class PlayerMovement : MonoBehaviour
             hurtVfx.Play();
             currentHealth--;
             onObsticle?.Invoke();
+            //BoxCollider[] obsColliders= collision.gameObject.GetComponents<BoxCollider>();
+            //foreach(Collider box in obsColliders)
+            //{
+            //    if (box.isTrigger == false)
+            //    {
+            //        box.gameObject.GetComponent<BoxCollider>().enabled = false;
+            //    }
+            //}
+
+            lastHitTime = Time.time;
 
             lastHitTime = Time.time;
 
@@ -97,26 +109,28 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit(Collider collision)
     {
         if (collision.gameObject.CompareTag("obstacle"))
         {
             hurtVfx.Stop();
         }
-    }
-            
+    }      
+    
     public void ApplyPowerUp(PowerUp p)
     {
         Debug.Log($"Apply power up of type {p.name} to player");
         playSfxEvent.RaisePlayEvent(collectPowerUpSfx, sfxConfig);
-        powerUpVfx.Play();
+        
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity += speedPowerUp.speedBoost;
+            powerUpVfx1.Play();
         }
         else if (p is JumpPowerUp jumpPowerUp)
         {
             jumpForce += jumpPowerUp.jumpBonus;
+            powerUpVfx2.Play();
         }
     }
 
@@ -126,7 +140,8 @@ public class PlayerMovement : MonoBehaviour
 
         Debug.Log($"Removing power up of type {p.name} from player");
         playSfxEvent.RaisePlayEvent(fadePowerUpSfx, sfxConfig);
-        powerUpVfx.Stop();
+        powerUpVfx1.Stop();
+        powerUpVfx2.Stop();
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity -= speedPowerUp.speedBoost;
@@ -140,7 +155,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         var previous = isGrounded;
-        isGrounded = Physics2D.Raycast(groundChecker.position, Vector2.down, groundCheckerDistance, groundLayer);
+        isGrounded = Physics.Raycast(groundChecker.position, Vector3.down, groundCheckerDistance, groundLayer);
         if (previous == false && isGrounded)
         {
             playSfxEvent.RaisePlayEvent(playerLandSfx, sfxConfig);

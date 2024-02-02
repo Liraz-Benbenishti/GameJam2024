@@ -6,7 +6,7 @@ public class StreetPerformer : MonoBehaviour
 {
     [SerializeField] Animator Moves;
 
-    private void OnCollisionStay2D(Collision2D OBJ)
+    private void OnCollisionStay(Collision OBJ)
     {
         if (OBJ.gameObject.CompareTag("Player"))
         {
