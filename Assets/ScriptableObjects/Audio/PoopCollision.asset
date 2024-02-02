@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a408102ac5ae74d049423ceb871bc999, type: 3}
-  m_Name: FadePowerUpSfx
+  m_Name: PoopCollision
   m_EditorClassIdentifier: 
   looping: 0
   _audioClipGroups:
   - sequenceMode: 0
     audioClips:
-    - {fileID: 8300000, guid: 608c81364956d4775a8c8b50a279603c, type: 3}
+    - {fileID: 8300000, guid: 38b355ae764c0ad43af089dabb0fd2ec, type: 3}

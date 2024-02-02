@@ -8,7 +8,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<<< HEAD:Assets/Prefabs/Obstacles/PigeonParent.prefab
   - component: {fileID: 2776138218766228840}
+========
+  - component: {fileID: 1420752646516111933}
+  - component: {fileID: 5339163085881247136}
+  - component: {fileID: 8427534886634134245}
+  - component: {fileID: 1993475904216643822}
+  - component: {fileID: 2391476989987332197}
+>>>>>>>> 5d0796bbbe9d6e43c6089f41b033b00005496691:Assets/Prefabs/Obstacles/Pigeon.prefab
   m_Layer: 0
   m_Name: PigeonParent
   m_TagString: Untagged
@@ -29,7 +37,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<<< HEAD:Assets/Prefabs/Obstacles/PigeonParent.prefab
   - {fileID: 4679610824979463230}
+========
+  - {fileID: 3740419116557093620}
+  - {fileID: 7201262412419757346}
+  - {fileID: 4244667136971277224}
+  - {fileID: 5015920351978619891}
+  - {fileID: 9181823609670283552}
+  - {fileID: 5422869297780792743}
+  - {fileID: 6753255849414367620}
+  - {fileID: 275577689287975246}
+  - {fileID: 4968364741323032987}
+>>>>>>>> 5d0796bbbe9d6e43c6089f41b033b00005496691:Assets/Prefabs/Obstacles/Pigeon.prefab
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1507561616001231205
@@ -115,7 +135,42 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<<< HEAD:Assets/Prefabs/Obstacles/PigeonParent.prefab
 --- !u!1 &5148990510519264128
+========
+--- !u!114 &1993475904216643822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323390370882039103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3c588fec794f74192169fd79d252ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poop_dropping: 8.8
+  poopPrefab: {fileID: 7501281534948576311, guid: 2094241050ae4f84e9f699f2e3b1802d, type: 3}
+  poop_hole: {fileID: 4968364741323032987}
+  playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
+  sfxConfig: {fileID: 11400000, guid: 2ba9909db7b724f80a8d4a42b5596292, type: 2}
+  poopingSfx: {fileID: 11400000, guid: 7c530cea21cd3854882fbdaa00f478fc, type: 2}
+--- !u!114 &2391476989987332197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323390370882039103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369ebff9134f0be469b8546963050857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!1 &897512894912391641
+>>>>>>>> 5d0796bbbe9d6e43c6089f41b033b00005496691:Assets/Prefabs/Obstacles/Pigeon.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -229,7 +284,42 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<<< HEAD:Assets/Prefabs/Obstacles/PigeonParent.prefab
 --- !u!1 &6285406141019351868
+========
+--- !u!1 &1596939629838128962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4968364741323032987}
+  m_Layer: 0
+  m_Name: pooping_hole
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4968364741323032987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596939629838128962}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.72, y: -0.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1420752646516111933}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2069660085654554451
+>>>>>>>> 5d0796bbbe9d6e43c6089f41b033b00005496691:Assets/Prefabs/Obstacles/Pigeon.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

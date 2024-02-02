@@ -93,6 +93,8 @@ public class PlayerMovement : MonoBehaviour
 
             lastHitTime = Time.time;
 
+            lastHitTime = Time.time;
+
             if (currentHealth == 0)
             {
                 playSfxEvent.RaisePlayEvent(loseSfx, sfxConfig);
@@ -114,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
             hurtVfx.Stop();
         }
     }      
+    
     public void ApplyPowerUp(PowerUp p)
     {
         Debug.Log($"Apply power up of type {p.name} to player");
