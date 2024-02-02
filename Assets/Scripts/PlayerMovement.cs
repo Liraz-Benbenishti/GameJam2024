@@ -2,11 +2,12 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody rb;
-    public float velocity = 5f;
+    public float speed = 5f;
     public float jumpForce = 10f;
     public bool isGrounded = true;
 
@@ -59,19 +60,17 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, 0f, 0f);
 
         // Apply movement to the Rigidbody
-        rb.velocity = new Vector3(movement.x * velocity, rb.velocity.y, 0);
+        rb.velocity = new Vector3(movement.x * speed, rb.velocity.y, 0);
 
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded || isDoubleJumpPossible)
             {
-                rb.velocity = new Vector3(rb.velocity.x, 0, 0f);
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
                 isDoubleJumpPossible = !isDoubleJumpPossible;
                 playSfxEvent.RaisePlayEvent(playerJumpSfx, sfxConfig);
             }
         }
-
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -124,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (p is SpeedPowerUp speedPowerUp)
         {
-            velocity += speedPowerUp.speedBoost;
+            speed += speedPowerUp.speedBoost;
             powerUpVfx1.Play();
         }
         else if (p is JumpPowerUp jumpPowerUp)
@@ -144,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
         powerUpVfx2.Stop();
         if (p is SpeedPowerUp speedPowerUp)
         {
-            velocity -= speedPowerUp.speedBoost;
+            speed -= speedPowerUp.speedBoost;
         }
         else if (p is JumpPowerUp jumpPowerUp)
         {
