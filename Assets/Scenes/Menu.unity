@@ -199,9 +199,44 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 32505495236458807, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0e1dfa7fe11ce42079a67dd01761071b, type: 3}
+    - target: {fileID: 248136684915666299, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
+      propertyPath: m_text
+      value: 'Controls:
+
+        Spacebar- Jump / Double Jump
+
+        Right - Thrust
+        engine forward
+
+        Left - Slow down and move backwards
+
+        Green
+        powerup - Speed
+
+        Blue powerup - Super Jump
+
+        Left Ctrl - Maintain
+        Stability'
+      objectReference: {fileID: 0}
     - target: {fileID: 1284585142717092240, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332862303369107160, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770931896865398747, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
+      propertyPath: m_fontSize
+      value: 81.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770931896865398747, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 81.89
       objectReference: {fileID: 0}
     - target: {fileID: 4170120388288254767, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
       propertyPath: m_Pivot.x
@@ -284,6 +319,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5650730248342423728, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712723221605493977, guid: 2c2e948f88b93574b8e3af00971696e8, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

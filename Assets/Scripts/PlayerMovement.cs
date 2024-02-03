@@ -47,8 +47,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        //rb.constraints = RigidbodyConstraints.FreezeRotationX;
-        //rb.constraints = RigidbodyConstraints.FreezeRotationY;
         playSfxEvent.RaisePlayEvent(playerMotorSfx, sfxConfig);
     }
 
@@ -63,6 +61,23 @@ public class PlayerMovement : MonoBehaviour
 
         // Apply movement to the Rigidbody
         rb.velocity = new Vector3(movement.x * velocity, rb.velocity.y, 0);
+
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotationZ;
+            rb.rotation = Quaternion.Slerp(rb.rotation, Quaternion.LookRotation(new Vector3(0, 0, 0)), 0.007f);
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            rb.constraints = RigidbodyConstraints.None;
+        }
+
+        if (!Input.GetKey(KeyCode.LeftControl))
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotationX;
+            rb.constraints = RigidbodyConstraints.FreezeRotationY;
+        }
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -104,14 +119,6 @@ public class PlayerMovement : MonoBehaviour
             hurtVfx.Play();
             currentHealth--;
             onObsticle?.Invoke();
-            //BoxCollider[] obsColliders= collision.gameObject.GetComponents<BoxCollider>();
-            //foreach(Collider box in obsColliders)
-            //{
-            //    if (box.isTrigger == false)
-            //    {
-            //        box.gameObject.GetComponent<BoxCollider>().enabled = false;
-            //    }
-            //}
 
             lastHitTime = Time.time;
 
@@ -161,10 +168,6 @@ public class PlayerMovement : MonoBehaviour
     public async Task RemovePowerUp(PowerUp p)
     {
         await Task.Delay(TimeSpan.FromSeconds(p.duration));
-        //rb.freezeRotation = false;
-        //rb.constraints = RigidbodyConstraints.FreezeRotationX;
-        //rb.constraints = RigidbodyConstraints.FreezeRotationY;
-
         Debug.Log($"Removing power up of type {p.name} from player");
         playSfxEvent.RaisePlayEvent(fadePowerUpSfx, sfxConfig);
         powerUpVfx1.Stop();

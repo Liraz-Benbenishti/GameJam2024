@@ -161,9 +161,9 @@ MonoBehaviour:
   - {fileID: 889984310754472131, guid: 8c93c51c8484f449abd674f7db073101, type: 3}
   - {fileID: 8175488503401318768, guid: cee39425182d74af7b63b5ecba13fabb, type: 3}
   minObstacleCount: 10
-  maxObstacleCount: 40
+  maxObstacleCount: 35
   startingObstaclePosition: 15
-  minObstacleDistance: 10
+  minObstacleDistance: 13
   maxObstacleDistance: 15
   Z_pos: {fileID: 92231156}
   Zdistance: -6
@@ -542,13 +542,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.029840691, y: 0, z: 0, w: 0.9995547}
-  m_LocalPosition: {x: 0, y: 0.3, z: -14.68}
+  m_LocalRotation: {x: 0.033591263, y: 0, z: 0, w: 0.99943566}
+  m_LocalPosition: {x: -2.5, y: 0.14, z: -14.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 3.42, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.85, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2197,7 +2197,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3846018093981099296, guid: d296a4b658ba1fb4f9acc7b433e29d5f, type: 3}
+  - {fileID: 2100000, guid: 7cfdc8db018fc9f41aba32205f903482, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9222,7 +9222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &6581727610138686201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10094,11 +10094,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: aea3670687090483595f2a036c1e2c4f, type: 2}
     - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: velocity
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: jumpForce
-      value: 7
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: maxHealth
@@ -10114,7 +10114,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b08cc75e5a148476f84f8f4d6ce3d00b, type: 2}
     - target: {fileID: 4770168057875030392, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_Mass
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4770168057875030392, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_AngularDrag
@@ -10128,6 +10128,10 @@ PrefabInstance:
       propertyPath: m_Interpolate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7246687199514810944, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eb6e9b673b04a324a8f875b6815c6850, type: 2}
     - target: {fileID: 8895274309280877663, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.535
