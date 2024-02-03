@@ -38,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
     public ParticleSystem powerUpVfx2;
     public ParticleSystem hurtVfx;
 
+    private AudioCueKey motorSfxKey;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -47,7 +49,12 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        playSfxEvent.RaisePlayEvent(playerMotorSfx, sfxConfig);
+        motorSfxKey = playSfxEvent.RaisePlayEvent(playerMotorSfx, sfxConfig);
+    }
+
+    private void OnDestroy()
+    {
+        playSfxEvent.RaiseStopEvent(motorSfxKey);
     }
 
     // Update is called once per frame
@@ -77,18 +84,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("obstacle") && Time.time > lastHitTime + invinsibleTime)
         {
-            Debug.Log($"hurting player by { collision.gameObject.name }");
+            Debug.Log($"hurting player by {collision.gameObject.name}");
             hurtVfx.Play();
             currentHealth--;
             onObsticle?.Invoke();
-            //BoxCollider[] obsColliders= collision.gameObject.GetComponents<BoxCollider>();
-            //foreach(Collider box in obsColliders)
-            //{
-            //    if (box.isTrigger == false)
-            //    {
-            //        box.gameObject.GetComponent<BoxCollider>().enabled = false;
-            //    }
-            //}
 
             lastHitTime = Time.time;
 
