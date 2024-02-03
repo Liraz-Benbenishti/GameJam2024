@@ -2703,6 +2703,7 @@ GameObject:
   - component: {fileID: 2541395181228697954}
   - component: {fileID: 8594476571548937434}
   - component: {fileID: 6059723506225522267}
+  - component: {fileID: 4496455074700775487}
   m_Layer: 3
   m_Name: StreetPerformer
   m_TagString: obstacle
@@ -2787,6 +2788,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &4496455074700775487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491936473203998678}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.041675314, y: 0.7980922, z: 0.9999998}
+  m_Center: {x: -0.36300907, y: 0.40061474, z: 0}
 --- !u!1 &6529767956161376273
 GameObject:
   m_ObjectHideFlags: 0

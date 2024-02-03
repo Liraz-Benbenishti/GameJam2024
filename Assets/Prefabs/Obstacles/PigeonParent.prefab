@@ -348,7 +348,7 @@ Transform:
   m_GameObject: {fileID: 6285406141019351868}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.47, y: 2.29, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.41583207, y: 0.41583207, z: 0.41583207}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3c588fec794f74192169fd79d252ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poop_dropping: 8.8
+  poop_dropping: 8
   poopPrefab: {fileID: 2322689418182257320, guid: 4cee03c7da27dd34b9ce705dec05513a, type: 3}
   poop_hole: {fileID: 3101883252176192463}
   playSfxEvent: {fileID: 11400000, guid: 6ccf80b5880d24614860dced14f50588, type: 2}
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369ebff9134f0be469b8546963050857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
 --- !u!1 &6859630361406943194
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +538,6 @@ GameObject:
   - component: {fileID: 5806787209335449421}
   - component: {fileID: 1357436472815387079}
   - component: {fileID: 2562301999139663123}
-  - component: {fileID: 7332942718644315452}
   m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
@@ -611,27 +610,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &7332942718644315452
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7129219571781313079}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.50000006
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7157460066863660450
 GameObject:
   m_ObjectHideFlags: 0

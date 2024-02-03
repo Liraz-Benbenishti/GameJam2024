@@ -5,17 +5,25 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour
 {
     public float duration;
-
-    private void OnTriggerEnter(Collider other)
+    public PlayerMovement player;
+    private void Start()
     {
-        if (other.gameObject.tag == "Player")
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+    }
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
         {
-            var player = other.gameObject.GetComponent<PlayerMovement>();
-            
             player.ApplyPowerUp(this);
-            //player.RemovePowerUp(this);
-            
+            backToNormal();
             gameObject.SetActive(false);
         }
+    }
+
+    private void backToNormal()
+    {
+        _ = player.RemovePowerUp(this);
     }
 }

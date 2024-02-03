@@ -64,9 +64,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459166199789352272}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 20
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -81,7 +81,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 56
+  m_Constraints: 58
   m_CollisionDetection: 0
 --- !u!1 &3416282996073714878
 GameObject:
@@ -193,13 +193,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4208979613467530888}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.3916621, w: 0.9201091}
-  m_LocalPosition: {x: -1.705, y: 0.722, z: 0.002}
-  m_LocalScale: {x: 0.06691198, y: 1.8015587, z: 0.7377709}
+  m_LocalRotation: {x: -0, y: -0, z: -0.43548772, w: 0.9001947}
+  m_LocalPosition: {x: -1.884, y: 0.707, z: 0.002}
+  m_LocalScale: {x: 0.014465032, y: 2.1836853, z: 0.7377709}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3001547295196641003}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.116}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -51.633}
 --- !u!33 &861026491413581672
 MeshFilter:
   m_ObjectHideFlags: 0

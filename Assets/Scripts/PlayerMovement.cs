@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float velocity = 5f;
     public float jumpForce = 10f;
     public bool isGrounded = true;
-
+    public ScrollingBackground bg;
+    public MoveObject route;
     public Transform groundChecker;
     public float groundCheckerDistance = 0.1f;
     public LayerMask groundLayer;
@@ -46,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        //rb.constraints = RigidbodyConstraints.FreezeRotationX;
+        //rb.constraints = RigidbodyConstraints.FreezeRotationY;
         playSfxEvent.RaisePlayEvent(playerMotorSfx, sfxConfig);
     }
 
@@ -74,8 +77,27 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.layer==3)
+        {
+            isGrounded = true;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.layer == 3)
+        {
+            isGrounded = false;
+        }
+    }
+
     private void OnTriggerEnter(Collider collision)
     {
+        if (collision.gameObject.CompareTag("Hole"))
+        {
+            gameOverEvent.raiseEvent();
+        }
         if (collision.gameObject.CompareTag("obstacle") && Time.time > lastHitTime + invinsibleTime)
         {
             Debug.Log($"hurting player by { collision.gameObject.name }");
@@ -121,10 +143,12 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log($"Apply power up of type {p.name} to player");
         playSfxEvent.RaisePlayEvent(collectPowerUpSfx, sfxConfig);
-        
+        //rb.freezeRotation = true;
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity += speedPowerUp.speedBoost;
+            route.speed += 1;
+            bg.speed += 0.05f;
             powerUpVfx1.Play();
         }
         else if (p is JumpPowerUp jumpPowerUp)
@@ -137,6 +161,9 @@ public class PlayerMovement : MonoBehaviour
     public async Task RemovePowerUp(PowerUp p)
     {
         await Task.Delay(TimeSpan.FromSeconds(p.duration));
+        //rb.freezeRotation = false;
+        //rb.constraints = RigidbodyConstraints.FreezeRotationX;
+        //rb.constraints = RigidbodyConstraints.FreezeRotationY;
 
         Debug.Log($"Removing power up of type {p.name} from player");
         playSfxEvent.RaisePlayEvent(fadePowerUpSfx, sfxConfig);
@@ -145,6 +172,8 @@ public class PlayerMovement : MonoBehaviour
         if (p is SpeedPowerUp speedPowerUp)
         {
             velocity -= speedPowerUp.speedBoost;
+            route.speed -= 1;
+            bg.speed -= 0.05f;
         }
         else if (p is JumpPowerUp jumpPowerUp)
         {
@@ -155,7 +184,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         var previous = isGrounded;
-        isGrounded = Physics.Raycast(groundChecker.position, Vector3.down, groundCheckerDistance, groundLayer);
+        //isGrounded = Physics.Raycast(groundChecker.position, Vector3.down, groundCheckerDistance, groundLayer);
         if (previous == false && isGrounded)
         {
             playSfxEvent.RaisePlayEvent(playerLandSfx, sfxConfig);
