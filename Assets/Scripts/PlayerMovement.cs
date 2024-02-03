@@ -45,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
@@ -57,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
         playSfxEvent.RaiseStopEvent(motorSfxKey);
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Get input from the player
