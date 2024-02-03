@@ -157,7 +157,6 @@ MonoBehaviour:
   - {fileID: 1459166199789352272, guid: 28bb936ed1658eb4f94914a891146126, type: 3}
   - {fileID: 6491936473203998678, guid: d348ca9eec390684ea088023b811470c, type: 3}
   - {fileID: 1459166199789352272, guid: f2181b1e405410e4ab18be680dbd7ded, type: 3}
-  - {fileID: 874641821239185381, guid: ab3119844c3cf814093961ec552d877e, type: 3}
   minObstacleCount: 10
   maxObstacleCount: 30
   startingObstaclePosition: 15
@@ -1523,11 +1522,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b43c25af1142da74a86340fe6c0ab4f9, type: 3}
   m_PrefabInstance: {fileID: 417678124}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1649663809 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7910427588988478679, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-  m_PrefabInstance: {fileID: 8809249178738831082}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1734136767
 GameObject:
@@ -9984,46 +9978,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 57252912883936846, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.549
-      objectReference: {fileID: 0}
-    - target: {fileID: 428177490954362832, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_Size.y
-      value: 2.3483305
-      objectReference: {fileID: 0}
-    - target: {fileID: 428177490954362832, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_Center.y
-      value: 1.1606079
-      objectReference: {fileID: 0}
-    - target: {fileID: 750936975148543014, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1753013567469531058, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1753013567469531058, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1753013567469531058, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_Constraints
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 1753013567469531058, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_Interpolate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1753013567469531058, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_ImplicitTensor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1753013567469531058, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2582101137640255530, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -10067,50 +10021,6 @@ PrefabInstance:
     - target: {fileID: 2664263075733102893, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: hurtVfx
-      value: 
-      objectReference: {fileID: 1649663809}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: loseSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: aea3670687090483595f2a036c1e2c4f, type: 2}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: velocity
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: jumpForce
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: maxHealth
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: fadePowerUpSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: aea3670687090483595f2a036c1e2c4f, type: 2}
-    - target: {fileID: 4694308095814114553, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: collectPowerUpSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: b08cc75e5a148476f84f8f4d6ce3d00b, type: 2}
-    - target: {fileID: 4770168057875030392, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4770168057875030392, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_Constraints
-      value: 56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4770168057875030392, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_Interpolate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895274309280877663, guid: 96c7d02647ac89346925d16f698884b3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.535
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
